@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>starwars-character-searcher</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Star Wars Character Searcher</h1>
+        <section class="search">
+          <app-input placeholder="Write a Star Wars character name..." border-color="red"></app-input>
+        </section>
+        <section>
+          <center>
+            <app-loader size="100"></app-loader>    
+          </center>   
+          <app-list></app-list>
+          <app-error></app-error>
+        </section>
+      </section>
+          
+    </main>
+    <app-modal></app-modal>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+  /* App colors */
+  --primary-color: #803cbe;
+  --primary-dark-color: #6c28ac;
+  --secondary-color: #f0c15b;
+  --gray-color: #cecece;
+  --black-color: #19141a;
+  --white-color: #f8f6f8;
+
+  /* Paddings */
+  --padding-sm: .5rem;
+  --padding-md: .9rem;
+  --padding-lg: 2rem;
+
+  /* Spacing */
+  --spacing-sm: .5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2.5rem;
+
+  /* Shadows */
+  --app-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Erros */
+  --error-color: #9b3d3a;
+  --light-error-color: #f9d6d5;
+}
+
+/* App styles */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: var(--padding-lg);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color)
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.45rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.20rem;
+}
+h6 {  
+  font-size: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.search > * {
+  flex: 1;
+}
+
