@@ -19,11 +19,6 @@ export class Applist extends LitElement {
             const current = this.characters;
 
             console.log('Characters cambió', { prev, current });
-
-            // aquí puedes:
-            // - hacer cálculos
-            // - normalizar datos
-            // - disparar eventos
         }
     }
 
