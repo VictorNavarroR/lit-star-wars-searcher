@@ -46,7 +46,7 @@ export class AppAlert extends LitElement {
             return html``;
         }
         return html`
-          <div class="alert-${this.type}" type="${this.type}" ?hidden="${!this.visible}">
+          <div class="alert-${this.type}" type="${this.type}">
             <h4><slot></slot></h4>
           </div>`;
     }
