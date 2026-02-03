@@ -22,9 +22,13 @@
   /* Shadows */
   --app-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  /* Erros */
+  /* Alerts */
   --error-color: #9b3d3a;
   --light-error-color: #f9d6d5;
+  --info-color: #3d709b;
+  --light-info-color: #d5e8f9;
+  --warning-color: #9b703d;
+  --light-warning-color: #f9f0d5;
 }
 
 /* App styles */
@@ -55,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 5vw, 2.5rem);
 }
 h2 {
   font-size: 1.75rem;
