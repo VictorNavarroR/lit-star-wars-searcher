@@ -7,7 +7,7 @@ export const buildErrorResponse = (error: unknown): ErrorResponse => {
 
     const errorResponse: ErrorResponse = {
         message: error?.message || 'An unexpected error occurred',
-        code: error?.code,
+        code: error?.code || undefined,
     }
 
     return errorResponse
