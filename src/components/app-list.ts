@@ -13,15 +13,6 @@ export class Applist extends LitElement {
         results: [] 
     };
 
-    updated(changedProperties: Map<string, unknown>) {
-        if (changedProperties.has('characters')) {
-            const prev = changedProperties.get('characters') as CharacterList | undefined;
-            const current = this.characters;
-
-            console.log('Characters cambió', { prev, current });
-        }
-    }
-
     static styles = css`
             .list {
                 display: grid;
